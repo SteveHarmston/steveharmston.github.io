@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Aware Review: AI Content Detection for Text, Images, Audio &amp; Deepfake Video</title>
+<meta name="description" content="A practical guide to AI Aware (aiaware.io): how multi-modal AI detection works for text, images, audio and deepfake video, who uses it, and how to try it free.">
+<meta name="keywords" content="AI Aware, aiaware.io, AI content detector, deepfake detection, AI text detector, AI image detection, voice clone detection, multi-modal AI detection">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="google-site-verification" content="t0KJk5gxooAygKZai4qbUBgVKN7Shfi4OBSMtzsM-Iw" />
+<link rel="canonical" href="https://steveharmston.github.io/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI Aware: Multi-Modal AI Content Detection Explained">
+<meta property="og:description" content="How AI Aware detects AI-generated text, images, audio and deepfake video, and who benefits most.">
+<meta property="og:url" content="https://steveharmston.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"SoftwareApplication","name":"AI Aware","url":"https://aiaware.io/","applicationCategory":"SecurityApplication","description":"AI content detection platform for text, images, audio and video."},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is AI Aware?","acceptedAnswer":{"@type":"Answer","text":"AI Aware is a multi-modal AI detection platform that identifies AI-generated or manipulated text, images, audio and video, with confidence scores for each result."}},
+{"@type":"Question","name":"Can AI Aware detect deepfakes?","acceptedAnswer":{"@type":"Answer","text":"Yes. It analyses video and audio for signs of synthetic generation or manipulation, including facial inconsistencies and voice-cloning artefacts."}},
+{"@type":"Question","name":"Is there a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes. AI Aware offers a free trial with no credit card required."}},
+{"@type":"Question","name":"Is an AI detector ever 100% accurate?","acceptedAnswer":{"@type":"Answer","text":"No detector is perfect. Confidence scores should inform a human review, not replace it."}}]}]}
+</script>
+<style>
+:root{--bg:#eef1f6;--ink:#14213d;--mute:#4a5670;--card:#fff;--line:#cdd5e3;--amber:#ffb703;--teal:#0b7a7c;--red:#c2410c;--link:#0b5cad}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1626;--ink:#e8edf7;--mute:#9aa8c4;--card:#16223a;--line:#2a3a5c;--link:#7fb6ff;--teal:#4fd1c5;--red:#ff9a62}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.125rem/1.7 'Newsreader',Georgia,serif}
+h1,h2,h3,.sans{font-family:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:var(--link);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header.top{padding:1rem 0;border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.2rem;text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.1rem;font-size:.95rem;text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;padding:4rem 0 3rem;align-items:center}
+h1{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;margin:0 0 1rem}
+.lede{color:var(--mute);font-size:1.25rem;max-width:34rem}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:.8rem 1.3rem;border-radius:6px;font-weight:700;text-decoration:none;margin:.5rem .6rem 0 0}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.sample{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.4rem 1.5rem}
+.sample p{margin:0 0 1rem;font-size:1.05rem}
+.sample .cap{font-size:.85rem;color:var(--mute);margin:0}
+mark{color:inherit;padding:.05em .2em;border-radius:3px}
+.h-hi{background:rgba(194,65,12,.28)}.h-mid{background:rgba(255,183,3,.4)}.h-lo{background:rgba(11,122,124,.22)}
+.key{display:flex;gap:1rem;flex-wrap:wrap;font-size:.85rem;margin:.9rem 0 0}
+.key span::before{content:"";display:inline-block;width:.8em;height:.8em;border-radius:2px;margin-right:.4em;vertical-align:-.05em}
+.key .a::before{background:rgba(194,65,12,.5)}.key .b::before{background:rgba(255,183,3,.7)}.key .c::before{background:rgba(11,122,124,.45)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin:0 0 1rem;max-width:40rem}
+h3{font-size:1.3rem;margin:0 0 .4rem}
+.prose{max-width:42rem}
+.prose p{margin:0 0 1.1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.25rem;margin-top:1.5rem}
+.grid>div{border-left:4px solid var(--teal);padding:.2rem 0 .2rem 1rem}
+.grid>div:nth-child(2){border-color:var(--amber)}.grid>div:nth-child(3){border-color:var(--red)}.grid>div:nth-child(4){border-color:var(--link)}
+.grid p{margin:0;color:var(--mute);font-size:1rem}
+.table-wrap{overflow-x:auto;margin-top:1.5rem}
+table{border-collapse:collapse;width:100%;min-width:34rem;font-size:1rem}
+th,td{text-align:left;padding:.7rem .9rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:'Bricolage Grotesque',sans-serif;font-size:.95rem}
+details{border-bottom:1px solid var(--line);padding:1rem 0;max-width:46rem}
+summary{cursor:pointer;font:700 1.15rem 'Bricolage Grotesque',sans-serif}
+details p{margin:.7rem 0 0;color:var(--mute)}
+.cta{background:var(--ink);color:var(--bg);border-radius:12px;padding:2.5rem;margin:2rem 0 3rem}
+.cta h2{margin-top:0}.cta a{color:var(--amber);font-weight:700}
+footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:2rem;padding-top:2.5rem}nav{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand sans" href="#top">AI Aware Guide</a>
+<nav aria-label="Page sections"><a href="#what">What it is</a><a href="#detect">What it detects</a><a href="#how">How it works</a><a href="#who">Who uses it</a><a href="#faq">FAQ</a></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+<div class="hero">
+<div>
+<h1>Is it human or machine? AI Aware answers for text, images, audio and video.</h1>
+<p class="lede">A plain-English guide to <a href="https://aiaware.io/">AI Aware</a>, the multi-modal AI content detection platform built to expose deepfakes, synthetic text and cloned voices before they cause damage.</p>
+<a class="btn" href="https://aiaware.io/?p=1117" rel="noopener">Start a free AI detection trial</a>
+<a class="btn alt" href="#how">See how detection works</a>
+</div>
+<aside class="sample" aria-label="Illustration of paragraph-level AI detection">
+<p><mark class="h-lo">I rewrote the intro three times before the deadline, mostly because the data kept changing.</mark> <mark class="h-hi">In today's rapidly evolving digital landscape, organisations must leverage cutting-edge solutions to navigate complexity.</mark> <mark class="h-mid">Our findings suggest that adoption accelerates when teams feel confident in the tools they use.</mark></p>
+<p class="cap">Illustration only: detectors score text passage by passage and report confidence rather than a simple pass or fail.</p>
+<div class="key"><span class="a">Likely AI</span><span class="b">Mixed or uncertain</span><span class="c">Likely human</span></div>
+</aside>
+</div>
+
+<section id="what">
+<h2>What is AI Aware?</h2>
+<div class="prose">
+<p>AI Aware is an AI detection platform that checks whether content was written, generated or altered by artificial intelligence. Unlike many detectors that handle only essays and articles, it covers four content types in one system: text, images, audio and video.</p>
+<p>The need is easy to see. Generative tools such as ChatGPT, Gemini, Claude, Midjourney, Sora and ElevenLabs now produce material that looks and sounds convincing. For a university, a law firm, a newsroom or a bank, the question &ldquo;did a person make this?&rdquo; has become a real risk question, tied to academic integrity, fraud, brand trust and misinformation.</p>
+<p>AI Aware reports each result with a confidence measure and highlights where AI-generated material sits inside a document or file, so reviewers can see <em>how much</em> and <em>where</em>, not just a verdict.</p>
+</div>
+</section>
+
+<section id="detect">
+<h2>What AI Aware can detect</h2>
+<p class="prose">One platform, four detection modules. Each looks for signals specific to its medium.</p>
+<div class="grid">
+<div><h3>AI-generated text</h3><p>Essays, reports, emails and articles from major language models, scored with paragraph-level highlighting.</p></div>
+<div><h3>AI images</h3><p>Pixel-level artefacts, repeated textures and metadata clues that point to image generators or manipulation.</p></div>
+<div><h3>Voice cloning and audio</h3><p>Synthetic or cloned speech, identified through prosody, spectral traits and background-noise patterns.</p></div>
+<div><h3>Deepfake video</h3><p>Facial inconsistencies, unnatural eye movement, lighting issues and frame-level anomalies in video.</p></div>
+</div>
+</section>
+
+<section id="how">
+<h2>How multi-model detection works</h2>
+<div class="prose">
+<p>Single-algorithm detectors have a known weakness. A model trained on familiar data performs well on that data but can stumble on content from a new generator or an unfamiliar domain. Models built to handle novelty can, in turn, be less precise on well-known patterns.</p>
+<p>AI Aware uses an ensemble approach: several detection models with different strengths are combined, and their outputs are blended into one assessment with a confidence score. The practical benefits are:</p>
+<ul>
+<li><strong>Resilience to edited content.</strong> Text that has been paraphrased, &ldquo;humanised&rdquo; or mixed with human writing is harder to hide from a portfolio of models.</li>
+<li><strong>Better coverage of new tools.</strong> Detection keeps up more easily as new generators appear.</li>
+<li><strong>Calibrated results.</strong> A confidence level helps reviewers decide when to escalate to a human check.</li>
+</ul>
+<p>As with any detector, results are evidence rather than proof. The best practice is to treat a high score as a prompt for review, especially in high-stakes decisions about people.</p>
+</div>
+</section>
+
+<section id="who">
+<h2>Who uses AI content detection</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Sector</th><th>Typical problem</th><th>How detection helps</th></tr></thead>
+<tbody>
+<tr><td>Education</td><td>Essays and coursework written by AI</td><td>Flags likely AI passages to support integrity reviews</td></tr>
+<tr><td>Legal and professional services</td><td>Fabricated contracts and documents</td><td>Checks authenticity before documents are relied on</td></tr>
+<tr><td>Financial services and insurance</td><td>Synthetic identities, deepfake calls, doctored claims</td><td>Screens images, audio and video for manipulation</td></tr>
+<tr><td>Publishing and media</td><td>Undisclosed AI articles and fake imagery</td><td>Protects editorial integrity and brand trust</td></tr>
+<tr><td>Recruitment and HR</td><td>AI-written CVs, cover letters and interview fraud</td><td>Supports fair, verified hiring</td></tr>
+<tr><td>Cybersecurity and public sector</td><td>Social engineering and misinformation</td><td>Detects personalised phishing and synthetic media</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="tips">
+<h2>Using an AI detector responsibly</h2>
+<div class="prose">
+<p>Detection works best as one input in a wider process. Compare a flagged document with the author's earlier work, ask for drafts or version history, and give people a chance to explain before acting. For media, pair detection with provenance checks: who published it first, and does the source hold up?</p>
+<p>If you want to see how this looks on your own material, you can run text, images, audio or video through <a href="https://aiaware.io/">the AI Aware content detector</a> and compare the confidence scores against what you already know.</p>
+</div>
+</section>
+
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details><summary>What is AI Aware?</summary><p>AI Aware is a multi-modal detection platform that identifies AI-generated or manipulated text, images, audio and video, and reports a confidence measure for each result.</p></details>
+<details><summary>Can it detect deepfakes and voice clones?</summary><p>Yes. Its video and audio modules look for signs of synthetic generation, including facial and lighting anomalies in video and cloned-voice artefacts in speech.</p></details>
+<details><summary>Is there a free trial?</summary><p>Yes. AI Aware offers a free trial with no credit card needed, and larger organisations can request a broader evaluation.</p></details>
+<details><summary>Is any AI detector 100% accurate?</summary><p>No. Detection is probabilistic. Use confidence scores to guide human review rather than as the sole basis for a decision.</p></details>
+<details><summary>Which AI tools can it spot?</summary><p>It targets output from popular language, image, video and voice generators. Detection models are updated as new tools emerge.</p></details>
+</section>
+
+<div class="cta">
+<h2>Check your content with AI Aware</h2>
+<p>Test text, images, audio and video for AI generation and see the confidence scores for yourself. <a href="https://aiaware.io/?p=1117" rel="noopener">Claim your free AI Aware trial</a>.</p>
+</div>
+</div>
+</main>
+
+<footer><div class="wrap">
+<p>Independent informational page about AI Aware. Product details are based on publicly available information and may change; confirm current features and pricing at <a href="https://aiaware.io/">aiaware.io</a>.</p>
+</div></footer>
+</body>
+</html>
